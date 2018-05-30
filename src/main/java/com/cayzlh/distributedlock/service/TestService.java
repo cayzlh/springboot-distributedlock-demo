@@ -1,6 +1,7 @@
 package com.cayzlh.distributedlock.service;
 
 import com.cayzlh.distributedlock.annotations.DistributeLock;
+import org.springframework.stereotype.Service;
 
 /**
  * Description:
@@ -10,6 +11,7 @@ import com.cayzlh.distributedlock.annotations.DistributeLock;
  * @author Ant丶
  * @date 2018-05-30.
  */
+@Service
 public class TestService {
 
 

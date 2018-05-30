@@ -1,7 +1,7 @@
 package com.cayzlh.distributedlock.config;
 
-import com.cayzlh.common.distributelock.lock.IDistributedLock;
-import com.cayzlh.common.distributelock.lock.RedisDistributedLock;
+import com.cayzlh.distributedlock.lock.IDistributedLock;
+import com.cayzlh.distributedlock.lock.RedisDistributedLock;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
