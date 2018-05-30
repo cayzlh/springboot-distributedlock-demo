@@ -1,8 +1,8 @@
 package com.cayzlh.distributedlock.aspect;
 
-import com.cayzlh.common.distributelock.annotations.DistributeLock;
-import com.cayzlh.common.distributelock.config.DistributedLockAutoConfiguration;
-import com.cayzlh.common.distributelock.lock.IDistributedLock;
+import com.cayzlh.distributedlock.annotations.DistributeLock;
+import com.cayzlh.distributedlock.config.DistributedLockAutoConfiguration;
+import com.cayzlh.distributedlock.lock.IDistributedLock;
 import org.apache.log4j.Logger;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -51,7 +51,7 @@ public class DistributedLockAspectConfiguration {
     /**
      * 定义切入点
      */
-    @Pointcut("@annotation(com.cayzlh.common.distributelock.annotations.DistributeLock)")
+    @Pointcut("@annotation(com.cayzlh.distributedlock.annotations.DistributeLock)")
     private void lockPoint() {
     }
 
@@ -113,7 +113,7 @@ public class DistributedLockAspectConfiguration {
      */
     private String parse(String key, Method method, Object[] args) {
         String[] params = discoverer.getParameterNames(method);
-        if (null == params || params.length == 0) {
+        if (null == params || params.length == 0 || !key.contains("#")) {
             return key;
         }
         EvaluationContext context = new StandardEvaluationContext();

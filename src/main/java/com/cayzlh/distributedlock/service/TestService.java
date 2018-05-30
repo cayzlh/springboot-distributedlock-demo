@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
 public class TestService {
 
 
-    @DistributeLock(name = "test", value = "#key.concat(#value)")
+    @DistributeLock(name = "TestService_distributedLockTest", value = "#key.concat(#value)")
     public String distributedLockTest(String key, String value) throws InterruptedException {
 
         Thread.sleep(5000L);
