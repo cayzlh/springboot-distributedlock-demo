@@ -1,7 +1,7 @@
 > 基于springboot2.x，支持spring-boot-starter的船新版本：
-> [redis-distributedlock-spring-boot-starter](https://github.com/cayzlh/redis-distributedlock-spring-boot-starter)
+> [redis-distributedlock-spring-boot-starter](https://github.com/cayzlh/cayzlh-starters)
 
-**本文详细地址：[SpringBoot实现Redis分布式锁](https://blog.cayzlh.com/2018/05/30/2018053001/)**
+**本文详细地址：[SpringBoot实现Redis分布式锁](https://www.cayzlh.com/post/1639182984/)**
 
 ### 前言
 
